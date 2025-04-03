@@ -10,7 +10,13 @@ body {
 #main-container {
     display: grid; 
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 10% 90%;
+}
+
+#header-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr)
 }
 
 #sidebar-container {
@@ -40,6 +46,19 @@ body {
 
 .nav-container ul {
     list-style: none;
+    font-size: 1.2rem;
+}
+
+.nav-icon {
+    position: relative;
+    top: 4px;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+#nav-list-1 {
+    margin-bottom: 50px;
 }
 
 #content-container {
