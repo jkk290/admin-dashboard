@@ -10,14 +10,61 @@ body {
 #main-container {
     display: grid; 
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 15% 85%;
 }
 
 #header-container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
+
+#search-icon,
+#notification-icon {
+    height: 24px;
+    width: 24px;
+}
+
+#search-box {
+    grid-column: 2 / 5;
+    background-color: rgb(216, 221, 238);
+    height: 32px;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.header-btns {
+    background-color: rgb(66, 42, 134);
+    color: white;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    height: 2.5em;
+    width: 6em;
+}
+
+#new-btn {
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    grid-column: 5 / 6 ;
+}
+
+#upload-btn {
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    grid-column: 6 / 7 ;
+}
+
+#share-btn {
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    grid-column: 7 / 8 ;
+}
+
+
 
 #sidebar-container {
     display: grid;
@@ -64,6 +111,7 @@ body {
 #content-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(216, 221, 238);
 }
 
 #projects-container {
