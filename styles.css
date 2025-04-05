@@ -9,28 +9,79 @@ body {
 
 #main-container {
     display: grid; 
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 15% 85%;
+    grid-template-columns: minmax(250px, 300px) 5fr;
+    grid-template-rows: 20% 80%;
 }
 
 #header-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2px;
 }
 
 #search-icon,
 #notification-icon {
     height: 24px;
     width: 24px;
+    align-self: center;
+    justify-self: end;
+    margin-right: 5px;
 }
 
 #search-box {
+    align-self: center;
     grid-column: 2 / 5;
-    background-color: rgb(216, 221, 238);
+    background-color: rgb(238, 240, 245);
     height: 32px;
     border-radius: 50px;
     border-style: none;
+}
+
+#header-user-container {
+    display: grid;
+    grid-template-columns: 1fr .3fr 1fr;
+    grid-column: 5 / 8;
+}
+
+#profile-icon {
+    width: 72px;
+    height: 72px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+#user-full-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: center;
+}
+
+#profile-icon-big {
+    width: 96px;
+    height: 96px;
+    align-self: center;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+#welcome-message {
+    grid-column: 2 / 4;
+    align-self: center;
+}
+
+#welcome-message-small {
+    padding: 0;
+    margin: 0;
+}
+
+#welcome-message-big {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 .header-btns {
@@ -41,6 +92,7 @@ body {
     font-size: 1.25rem;
     height: 2.5em;
     width: 6em;
+    justify-self: center;
 }
 
 #new-btn {
@@ -65,7 +117,6 @@ body {
 }
 
 
-
 #sidebar-container {
     display: grid;
     grid-template-rows: 50px;
@@ -73,6 +124,8 @@ body {
     grid-row: 1 / -1;
     background-color: rgb(66, 42, 134);
     color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    margin-right: 2px;
 }
 
 #title-container {    
@@ -111,7 +164,7 @@ body {
 #content-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(216, 221, 238);
+    background-color: rgb(238, 240, 245);
 }
 
 #projects-container {
